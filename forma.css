@@ -1,0 +1,116 @@
+
+* {
+    font-family: Arial;
+}
+
+body {
+    background-color: #EFF6FF;
+    color: #1E293B;
+    margin: 20px;
+}
+
+h1 {
+    color: navy;
+    font-size: 25pt;
+}
+
+form > div {
+    background-color: white;
+    margin: 15px 0;
+    padding: 20px;
+    border: 1px solid #999999;
+    width: 750px;
+    box-sizing: border-box;
+}
+
+h2 {
+    color: navy;
+    font-size: 18pt;
+}
+
+form label {
+    display: inline-block;
+    width: 220px;
+    color: navy;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="tel"],
+input[type="email"],
+input[type="password"],
+select {
+    display: inline-block;
+    padding: 8px;
+    margin-bottom: 10px;
+    background-color: lightgray;
+    border: 1px solid gray;
+}
+
+input:focus,
+select:focus {
+    border: 2px solid green;
+    background-color: white;
+}
+
+input[maxlength] {
+    border: 1px solid blue;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    padding: 10px;
+    margin: 5px;
+}
+
+input[type="submit"]:hover {
+    background-color: lightgreen;
+}
+
+input[type="reset"]:hover {
+    background-color: lightgray;
+}
+
+.qr-box {
+    background-color: white;
+    padding: 15px;
+    margin: 20px 0;
+    border: 1px solid gray;
+    width: 750px;
+    box-sizing: border-box;
+}
+
+.qr-box img {
+    width: 150px;
+    filter: none;
+}
+
+h2 + label {
+    color: blue;
+}
+
+@media (prefers-color-scheme: dark) {
+    .qr-box img {
+        filter: invert(50%);
+    }
+}
+
+@media screen and (max-width: 499px) {
+    form {
+        background-color: lightblue;
+    }
+
+    form > div {
+        width: 100%;
+        background-color: lightblue;
+    }
+
+    form label {
+        display: block;
+        width: 100%;
+    }
+
+    .qr-box {
+        width: 100%;
+    }
+}

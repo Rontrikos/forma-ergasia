@@ -1,0 +1,163 @@
+
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Φόρμα Εγγραφής</title>
+    <link rel="stylesheet" href="forma.css">
+</head>
+
+<body>
+
+    <h1>Καλώς ήρθατε στη φόρμα εγγραφής</h1>
+
+    <form>
+
+        
+        <div>
+            <h2>Προσωπικά στοιχεία</h2>
+
+            <label for="title" title="Επιλέξτε την ιδιότητά σας">
+                Ιδιότητα:
+            </label>
+            <select id="title" name="title">
+                <option value="student" selected>Φοιτητής</option>
+                <option value="viewer">Θεατής</option>
+            </select>
+            <br>
+
+            <label for="firstname" title="Συμπληρώστε το όνομά σας με ελληνικά γράμματα">
+                Όνομα:
+            </label>
+            <input type="text" id="firstname" name="firstname"
+                   placeholder="π.χ. Ανδρέας">
+            <br>
+
+            <label for="lastname" title="Συμπληρώστε το επώνυμό σας με ελληνικά γράμματα">
+                Επώνυμο:
+            </label>
+            <input type="text" id="lastname" name="lastname"
+                   placeholder="π.χ. Κασκίρης">
+            <br>
+
+            <label for="birthdate" title="Επιλέξτε την ημερομηνία γέννησής σας">
+                Ημερομηνία γέννησης:
+            </label>
+            <input type="date" id="birthdate" name="birthdate"
+                   min="2008-01-01" max="2010-12-31">
+            <br>
+
+            <label for="country" title="Επιλέξτε τη χώρα σας">
+                Χώρα:
+            </label>
+            <select id="country" name="country">
+                <option value="Greece" selected>Ελλάδα</option>
+                <option value="Cyprus">Κύπρος</option>
+                <option value="Turkey">Τουρκία</option>
+                <option value="Italy">Ιταλία</option>
+                <option value="Albania">Αλβανία</option>
+                <option value="Bulgaria">Βουλγαρία</option>
+            </select>
+            <br>
+
+            <label for="maritalstatus" title="Επιλέξτε την οικογενειακή σας κατάσταση">
+                Οικογενειακή κατάσταση:
+            </label>
+            <select id="maritalstatus" name="maritalstatus">
+                <option value="single" selected>Άγαμος/η</option>
+                <option value="married">Έγγαμος/η</option>
+            </select>
+            <br>
+        </div>
+
+        
+        <div>
+            <h2>Στοιχεία επικοινωνίας</h2>
+
+            <label for="address" title="Συμπληρώστε τη διεύθυνση κατοικίας σας">
+                Διεύθυνση:
+            </label>
+            <input type="text" id="address" name="address"
+                   placeholder="π.χ. Λεωφόρος Αθηνών 10" required>
+            <br>
+
+            <label for="city" title="Συμπληρώστε την πόλη σας">
+                Πόλη:
+            </label>
+            <input type="text" id="city" name="city"
+                   size="10" maxlength="15" placeholder="π.χ. Αθήνα">
+            <br>
+
+            <label for="location" title="Συμπληρώστε την περιοχή σας">
+                Περιοχή:
+            </label>
+            <input type="text" id="location" name="location"
+                   placeholder="π.χ. Αττική">
+            <br>
+
+            <label for="postalcode" title="Συμπληρώστε τον ταχυδρομικό σας κώδικα">
+                Ταχυδρομικός κώδικας:
+            </label>
+            <input type="text" id="postalcode" name="postalcode"
+                   size="10" maxlength="10" placeholder="π.χ. 18534">
+            <br>
+
+            <label for="phone" title="Συμπληρώστε το τηλέφωνό σας">
+                Τηλέφωνο:
+            </label>
+            <input type="tel" id="phone" name="phone"
+                   placeholder="+30 6912345678">
+            <br>
+
+            <label for="email" title="Συμπληρώστε μια έγκυρη διεύθυνση email">
+                Email:
+            </label>
+            <input type="email" id="email" name="email"
+                   placeholder="example@email.com">
+            <br>
+        </div>
+
+        
+        <div>
+            <h2>Στοιχεία λογαριασμού</h2>
+
+            <label for="username" title="Δημιουργήστε ένα όνομα χρήστη">
+                Όνομα χρήστη:
+            </label>
+            <input type="text" id="username" name="username"
+                   placeholder="Επιλέξτε όνομα χρήστη" required>
+            <br>
+
+            <label for="password" title="Δημιουργήστε έναν κωδικό πρόσβασης">
+                Κωδικός πρόσβασης:
+            </label>
+            <input type="password" id="password" name="password"
+                   placeholder="Επιλέξτε κωδικό" required>
+            <br>
+        </div>
+
+       
+        <div>
+            <input type="checkbox" id="terms" name="terms"
+                   value="accepted" required>
+            <label for="terms" title="Πρέπει να αποδεχτείτε τους όρους χρήσης">
+                Αποδέχομαι τους όρους χρήσης
+            </label>
+            <br><br>
+
+            <input type="submit" value="Υποβολή">
+            <input type="reset" value="Ακύρωση">
+        </div>
+
+    </form>
+
+    
+    <div class="qr-box">
+        <p>Σαρώστε τον κωδικό QR</p>
+    <img src="qr_forma_netlify.png"
+     alt="QR Code">
+    </div>
+
+</body>
+</html>
